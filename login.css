@@ -1,0 +1,132 @@
+
+body {
+    background: linear-gradient(360deg, #000000, #1a1d23);
+    
+    
+}
+h1{
+  font-family: 'Font Name', sans-serif;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
+.Loginform{
+    background: linear-gradient(#1a1d23, #000000);
+    padding: 100px;
+    padding-bottom: 40px;
+    border-radius: 150px;
+    height: 800px;
+    width: 640px;
+    position: absolute;
+    top: 400px;
+    bottom: 500px;
+    left: 60px;
+    font-size: 1.5em;
+    color: white;
+    border:  5px solid white;
+}
+a {
+  text-decoration: none;
+  color: cadetblue;
+}
+#username{
+height: 55px;
+font-size: 0.9em;
+width: 650px;
+border-bottom: 1px solid white;
+background: linear-gradient(to right, #1a1d23, #1a1d23,#000000);
+border-top: none;
+border-left: none;
+border-right: none;
+margin-top: 12px;
+outline: none;
+padding-bottom: 1px;
+color: white;
+}
+#password{
+  height: 55px;
+  font-size: 0.9em;
+  width: 650px;
+  border-bottom: 1px solid
+  white;
+  background: linear-gradient(to right, #1a1d23, #1a1d23,#000000);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-top: 12px;
+  margin-bottom: 5px;
+  outline: none;
+  padding-bottom: 1px;
+  color: white;
+}
+#submit{
+  height: 60px;
+  width: 100px;
+  margin-left: 270px;
+  margin-top: 20px;
+  border-radius: 12px;
+}
+#submit:hover{
+  background-color: black;
+  color: white;
+}
+#errorMessage{
+  color: orangered;
+  font-size: 20px;
+}
+#audio {
+  height: 50px;
+  width:80px;
+}
+#audio:hover{
+  background-color: black;
+  color: white;
+  border: none;
+}
+@media (max-width: 50px) {
+  .Loginform{
+    background: linear-gradient(#1a1d23, #000000);
+    padding-bottom: 40px;
+    border-radius: 150px;
+    height: 800px;
+    width: 300px;
+    position: absolute;
+    top: 400px;
+    bottom: 500px;
+    left: 60px;
+    font-size: 1.5em;
+    color: white;
+    border:  5px solid white;
+}
+#username{
+height: 55px;
+font-size: 0.9em;
+width: 200px;
+border-bottom: 1px solid white;
+background: linear-gradient(to right, #1a1d23, #1a1d23,#000000);
+border-top: none;
+border-left: none;
+border-right: none;
+margin-top: 12px;
+outline: none;
+padding-bottom: 1px;
+color: white;
+}
+#password{
+  height: 55px;
+  font-size: 0.9em;
+  width: 200px;
+  border-bottom: 1px solid
+  white;
+  background: linear-gradient(to right, #1a1d23, #1a1d23,#000000);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-top: 12px;
+  margin-bottom: 5px;
+  outline: none;
+  padding-bottom: 1px;
+  color: white;
+}
+
+}

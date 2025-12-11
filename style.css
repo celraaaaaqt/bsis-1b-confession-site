@@ -1,0 +1,185 @@
+body {
+font-family: Arial, sans-serif;
+background: #111;
+color: white;
+}
+
+.container {
+background: #1e1e1e;
+padding: 100px;
+border-radius: 12px;
+box-shadow: 0 0 20px rgba(0,0,0,0.6);
+background-image: url('/images/IMG_20251207_144926_613.jpeg');
+
+background-size: 500px;
+background-repeat: no-repeat;
+}
+
+h1, h2 {
+text-align: center;
+}
+
+textarea {
+width: 100%;
+height: 120px;
+border-radius: 10px;
+border: none;
+padding: 10px;
+resize: none;
+outline: none;
+font-size: 16px;
+
+}
+#confessionInput{
+    opacity: 0.5;
+    background-color: #ffffff;
+    color: solid #333333;
+}
+#submitBtn {
+height: 50px;
+padding: 15px;
+background: darkseagreen;
+border: none;
+color: black;
+font-size: 18px;
+border-radius: 10px;
+margin-top: 10px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+#submitBtn:hover {
+background: white;
+}
+
+#confessionList {
+margin-top: 20px;
+}
+
+.confessionItem {
+background: #2a2a2a;
+padding: 15px;
+margin-bottom: 10px;
+border-radius: 8px;
+font-size: 15px;
+white-space: pre-wrap;
+}
+.confessionTime {
+font-size: 12px;
+margin-top: 5px;
+color: #bbbbbb;
+text-align: right;
+}
+/* Navbar container */
+.navbar {
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 22px 20px;
+    position: relative;
+    border-radius: 5px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+/* Hamburger */
+.hamburger {
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+    
+}
+
+/* Desktop NAV */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+}
+/* =========================================== */
+/* MOBILE STYLES + SLIDE DOWN ANIMATION */
+/* =========================================== */
+
+@media (max-width: 678px) {
+    .hamburger {
+        display: block;
+    }
+
+    /* Hide menu on mobile */
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #222;
+        flex-direction: column;
+        text-align: left;
+        overflow: hidden;
+gap: 25px;
+        /* Animation settings */
+        max-height: 0;
+        opacity: 0;
+        transition: max-height 3s ease, opacity 3s ease;
+    }
+
+    /* When hamburger is clicked */
+    #menu-toggle:checked ~ .nav-links {
+        max-height: 400px; /* adjust depending on number of items */
+        opacity: 1;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    .container {
+        width: 95%;
+        padding: 10px;   /* reduce padding for mobile */
+    }
+
+    textarea {
+        height:100px;   /* adjust height on mobile */
+        font-size: 14px;
+        width: 300px;
+    }
+
+#submitBtn{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px;
+}
+    .confessionItem {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    h1, h2 {
+        font-size: 22px;
+    }
+    #adminLog{
+        color: white;
+        background-color: limegreen;
+        padding: 10px;
+        border-radius: 10px;
+    }
+}
